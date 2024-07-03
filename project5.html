@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پروژه شماره 5</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/df4c2609b9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .course-title {
+        font-weight: bold;
+        font-size: 34px;
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 24px;
+        min-height: 100%;
+        background-image: url(assets/img/bg.png);
+      }
+      a {
+        text-decoration: none;
+      }
+      .tabbed {
+        width: 700px;
+        margin: 50px auto;
+        background-color: white;
+      }
+      .tabbed input {
+        display: none;
+      }
+      .tabbed label {
+        color: rgb(143, 143, 143);
+        display: block;
+        float: right;
+        padding: 3px 20px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s;
+      }
+      .tabbed label:hover,
+      .tabbed input:checked + label {
+        background-color: #56a6f1;
+        color: white;
+      }
+      .tabs {
+        clear: both;
+        perspective: 600px;
+      }
+      .tabs h2 {
+        padding: 30px 0;
+        font-size: 22px;
+        border-bottom: 1px solid #b5b4b4;
+      }
+      .tabs p {
+        margin-top: 30px;
+        color: #6d6d6d;
+        line-height: 32px;
+        font-size: 16px;
+      }
+      .tabs > div {
+        width: 700px;
+        background-color: white;
+        position: absolute;
+        border: 2px solid #efefef;
+        border-top: 0;
+        padding: 10px 30px 40px;
+        transform: rotateX(-20deg);
+        transition: opacity 0.3s, transform 1s;
+        opacity: 0;
+        z-index: 0;
+        transform-origin: top;
+      }
+      #tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+      #tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+      #tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+      #tab-nav-4:checked ~ .tabs > div:nth-of-type(4) {
+        transform: rotateX(0);
+        opacity: 1;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="t-c">
+      <p class="course-title">پروژه شماره 5</p>
+    </div>
+
+    <div class="tabbed">
+      <input type="radio" name="tabs" id="tab-nav-1" checked />
+      <label for="tab-nav-1">طراحی وب</label>
+      <input type="radio" name="tabs" id="tab-nav-2" />
+      <label for="tab-nav-2"> برنامه نویسی</label>
+      <input type="radio" name="tabs" id="tab-nav-3" />
+      <label for="tab-nav-3"> هوش مصنوعی</label>
+      <input type="radio" name="tabs" id="tab-nav-4" />
+      <label for="tab-nav-4"> جاوا اسکریپت</label>
+
+      <div class="tabs">
+        <div>
+          <h2>طراحی وب</h2>
+          <p>
+            بدون شک اولین قدم هر کسی برای ورود به دنیای طراحی و برنامه نویسی وب
+            یادگیری مباحث پایه CSS و HTML است. اما برای کسی که قصد داره به یک
+            فرانت اند تبدیل بشه این دو مورد تازه شروع یک راه پر از چالشه! امروزه
+            کسی رو متخصص فرانت اند می دونند که به تکنولوژی ها، ابزارها و مباحث
+            فنی توی این زمنیه مسلط باشه. فرانت اند شخصیه که درک مناسبی از اصول
+            تجربه کاربری و رابط کاربری ( UI/UX ) داشته باشه و بتونه از جدیدترین
+            ابزارهای طراحی استفاده کنه. به همین دلیل صرفا آشنایی با CSS و HTML
+          </p>
+        </div>
+        <div>
+          <h2>برنامه نویسی</h2>
+          <p>
+            بسیاری از افرادی که وارد دنیای برنامه نویسی می‌شوند پس از کسب دانش
+            تئوری و مطالعه در حوزه موردعلاقه به فکر ایجاد و تکمیل یک پروژه هستند
+            تا توانایی واقعی خود را بسنجند. لاراول یکی از فریم‌ورک‌های مطرح زبان
+            PHP و انتخاب بسیاری از برنامه‌نویسان است. برای شرکت در این دوره باید
+            با لاراول آشنایی داشته باشید زیرا هدف و تمرکز اصلی این دوره بر روی
+            کاربردی بودن آن است. به این صورت که افراد بعد از پایان این دوره به
+            راحتی بتوانند
+          </p>
+        </div>
+        <div>
+          <h2>هوش مصنوعی</h2>
+          <p>
+            در قدیم طراحی وب شامل یک پروسه کلی از طراحی تا برنامه نویسی و اجرا
+            بود. با گذشت زمان این پروسه به پروسه های کوچک تری خورد شد و شغل های
+            جدید رو به وجود آورد. همین امر باعث شد که هر کدوم از این مشاغل به
+            صورت حرفه ای تر فعالیت خودشون رو ادامه بدند و مدت ها هست که طراحان
+            رابط کاربری مثل خیلی از مشاغل دیگه جایگاه خودشون رو پیدا کردند و سهم
+            خوبی از بازار کار رو به خودشون اختصاص دادند. اگر سری به سایت
+          </p>
+        </div>
+        <div>
+          <h2>جاوااسکریپت</h2>
+          <p>
+            جاوا اسکریپت محبوب‌ترین گزینه برای کسانی است که قصد دارند تبدیل به
+            یک برنامه‌نویس فول استک شوند. این زبان ابزارها و فریم‌ورک‌های زیادی
+            برای توسعه در بخش Front-End و Back-End دارد و در تمام دنیا و البته
+            در ایران، تقاضای شغلی بالایی دارد. جاوا اسکریپت با ارائه React در
+            برنامه‌نویسی Front-End ، فریم‌ورک React Native در برنامه‌نویسی
+            اپلیکیشن موبایل، فریم‌ورک ElectronJS در برنامه‌نویسی اپلیکیشن‌های
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+
+  </body>
+</html>
